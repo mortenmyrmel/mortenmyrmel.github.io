@@ -1,0 +1,135 @@
+#main {
+    background:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url("Bilder/bakgrunn.jpg");
+    margin-right: -8px;
+    margin-left: -8px;
+}
+#hoved {
+    padding: 20px;
+    margin: -8px 100px;
+    border: 3px  #7D83FF;
+    border-style:inset;
+    border-radius: 30px;
+    background-color: #FF5D73;
+}
+
+h1 {
+    font-family:sans-serif;
+    text-align: center;
+}
+
+.tekst {
+    width: 90%;
+    margin: 0px auto;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#fargemodeller { 
+    width: 70%;
+    height: 150%;
+
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 270px;
+    height: 270px;
+}
+
+#fargemodeller > div {
+    width: 270px;
+    height: 270px;
+    border: 1px solid black;
+    margin: 16px auto;
+}
+
+#fargemodeller > div > p {
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    position: relative;
+    top: -546px;
+}
+
+.overlegg {
+    position: relative;
+    top: -238px;
+    height: 270px;
+    width: 270px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#fargemodeller > div:hover .overlegg {
+    opacity: 0.75;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    top: -160px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+thead > tr {
+    background-color: #84596B;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: hsl(310,25%, 90%);
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: hsl(3, 4%, 55%);
+}
+
+#rød {
+    background-color: red;
+}
+
+#oransje {
+    background-color: orange;
+}
+
+#gul {
+    background-color: yellow;
+}
+
+#grønn {
+    background-color: green;
+}
+
+#blå {
+    background-color: blue;
+}
+
+#fiolett {
+    background-color: violet;
+}

@@ -1,0 +1,151 @@
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <title>HSL</title>
+    
+
+    <style>
+#main {
+    background:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url("Bilder/bakgrunn.jpg");
+    margin-right: -8px;
+    margin-left: -8px;
+}
+#hoved {
+    padding: 20px;
+    margin: -8px 100px;
+    border: 3px  #7D83FF;
+    border-style:inset;
+    border-radius: 30px;
+}
+
+h1 {
+    font-family:sans-serif;
+    text-align: center;
+}
+
+.tekst {
+    width: 90%;
+    margin: 0px auto;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#fargemodeller { 
+    width: 70%;
+    height: 150%;
+
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 270px;
+    height: 270px;
+}
+
+#bildet{
+    opacity: 0;
+}
+
+#fargemodeller > div {
+    width: 270px;
+    height: 270px;
+    border: 1px solid black;
+    margin: 16px auto;
+}
+
+#fargemodeller > div > p {
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    position: relative;
+    top: -546px;
+}
+
+.overlegg {
+    position: relative;
+    top: -238px;
+    height: 270px;
+    width: 270px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#fargemodeller > div:hover .overlegg {
+    opacity: 0.75;
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    top: -160px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="hoved">
+            <h1>HSL</h1>
+
+            <p class="tekst">HSL, som RGB, har tre distinkte verdier. HSL står for hue, saturation og lightness. En alfaverdi kan også legges til HSL. Hue kontrollerer fargetonen fra 0 til 359. Antall grader i en sirkel brukes til å uttrykke fargetonen fra 0 til 359. Fargen kan være høyere enn 359, men den vil da begynne å telle igjen (380 = 20 eksempelvis). Saturation kontrollerer fargemetningen i prosent. Lightness kontrollerer lysstyrken til fargen i prosent. Dette gjør HSL ideell for programmering fordi det er enkelt å velge hvilken farge som skal brukes og det er ofte anbefalt som en god, hvis ikke best, fargevelger å bruke. Et eksempel på fargen blå i hsl er: hsl(240, 100%, 50%). Grønn er hsl(120, 100%, 50%).</p>
+
+        </div>
+            
+            <h1>Fargemodeller og hjemmesiden</h1>
+
+            <div id="fargemodeller">
+
+                <div>
+                    <img src="Bilder/rgb.png" alt="Bilde av tre sirkler med farger som blandes">  
+                    <div class="overlegg">
+                        <div class="text">
+                            <a href="rgb.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                            <p class="info">Trykk for å lære mer om RGB!</p>
+                        </div>
+                    </div>
+                    <p>RGB</p>
+                </div>
+
+                <div>
+                    <img src="Bilder/heksadesimal.png" alt="Bilde av fargestriper"> 
+                    <div class="overlegg">
+                        <div class="text">
+                        <a href="heksadesimale_fargekoder.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                        <p class="info">Trykk for å lære mer om dette!</p>
+                    </div>
+                </div>
+                    <p>Heksadesimale Fargekoder</p>
+                </div>
+
+                <div>
+                    <img src="Bilder/bakgrunn.jpg" id="bildet"> 
+                    <div class="overlegg">
+                        <div class="text">
+                        <a href="index.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                        <p class="info">Tilbake til farger</p>
+                    </div>
+                </div>
+                    <p style="color: #000000;">Tilbake til farger</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

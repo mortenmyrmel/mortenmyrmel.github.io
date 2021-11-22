@@ -1,0 +1,102 @@
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <title>Farger</title>
+    <link rel="stylesheet" href="stilark.css"> <!--Henter CSS fra et eksternt stilark.-->
+</head>
+
+<body>
+    <div id="main">
+        <div id="hoved">
+            <h1>Hva er farger?</h1>
+
+            <p class="tekst">En farge er en sanseopplevelse av lys med ulike intensiteter og bølgelengder. Det er en opplevelse brakt videre av de tre forskjellige typene tapper i øyet. Mennesker har evnen til å skille mellom tre og syv millioner forskjellige farger. Fysiske farger, kjemiske farger og fysiologiske farger er tre kategorier som farger kan deles inn i. Fysiske farger refererer til hvordan lys fra en lyskilde fremstår for deg som distinkte nyanser. Når lys reflekteres fra overflater og ting, er de kjemiske fargene det vi ser. De fysiske fargene er hvordan man opplever lys som kommer fra en lyskilde med forskjellige farger. De kjemiske fargene er hvordan lyset oppleves når det reflekteres fra overflater og objekter. De fysiologiske fargene er hvordan synssansen opplever fargeintrykk basert på hvilken sammenheng man ser fargen i. I CSS kan det brukes flere forskjellige fargemodeller. Noen av de fargemodellene som brukes kan det leses mer om nederst på siden. Ulike bølgelengder av lys blir sett på som forskjellige fargetoner. Tabellen nedenfor gir en oversikt. </p>
+
+        </div>
+            <div>
+                <table> <!--Lager en tabell-->
+                    <thead>
+                        <tr>
+                            <th colspan="3" >Bølgelengder i fargespekteret</th> <!--Colspan lar kolonnen spenne over flere celler.-->
+                        </tr>
+                        <tr>
+                            <th colspan="2">Farge</th>
+                            <th>Bølgeintervall</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rød</td>
+                            <td id="rød"></td>
+                            <td>650-750 nm</td>
+                        </tr>
+                        <tr>
+                            <td>Oransje</td>
+                            <td id="oransje"></td>
+                            <td>585-650 nm</td>
+                        </tr>
+                        <tr>
+                            <td>Gul</td>
+                            <td id="gul"></td>
+                            <td>575-585 nm</td>
+                        </tr>
+                        <tr>
+                            <td>Grønn</td>
+                            <td id="grønn"></td>
+                            <td>490-575 nm</td>
+                        </tr>
+                        <tr>
+                            <td>Blå</td>
+                            <td id="blå"></td>
+                            <td>420-490 nm</td>
+                        </tr>
+                        <tr>
+                            <td>Fiolett</td>
+                            <td id="fiolett"></td>
+                            <td>380-420 nm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <h1>Noen Fargemodeller</h1>
+
+            <div id="fargemodeller">
+
+                <div>
+                    <img src="Bilder/rgb.png" alt="Bilde av tre sirkler med farger som blandes">  
+                    <div class="overlegg">
+                        <div class="text">
+                            <a href="rgb.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                            <p class="info">Trykk for å lære mer om RGB!</p>
+                        </div>
+                    </div>
+                    <p>RGB</p>
+                </div>
+
+                <div>
+                    <img src="Bilder/heksadesimal.png" alt="Bilde av fargestriper"> 
+                    <div class="overlegg">
+                        <div class="text">
+                        <a href="heksadesimale_fargekoder.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                        <p class="info">Trykk for å lære mer om dette!</p>
+                    </div>
+                </div>
+                    <p>Heksadesimale Fargekoder</p>
+                </div>
+
+                <div>
+                    <img src="Bilder/hsl.png" alt="Bilde av et fargehjul">
+                    <div class="overlegg">
+                        <div class="text">
+                            <a href="hsl.html"><img src="Bilder/skygge.png" alt="Skygge"></a>
+                            <p class="info">Trykk for å lære mer om HSL!</p>
+                        </div>
+                    </div>
+                    <p>HSL</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
